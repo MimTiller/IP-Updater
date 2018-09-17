@@ -1,0 +1,22 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.godaddy.com:443
+DEBUG:urllib3.connectionpool:https://api.godaddy.com:443 "GET /v1/domains/vinylcraft.net/records/A/@ HTTP/1.1" 200 59
+DEBUG:GoDaddyPy.Client:[GET] response: <Response [200]>
+DEBUG:GoDaddyPy.Client:Response data: b'[{"data":"97.119.213.18","name":"@","ttl":600,"type":"A"}]\n'
+DEBUG:GoDaddyPy.Client:Retrieved 1 record(s) from vinylcraft.net.
+INFO:root:2018-07-17 10:04:26.945853 - GoDaddyIP:97.119.213.18 - Public IP:69.63.120.36 - Changed?:True
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.godaddy.com:443
+DEBUG:urllib3.connectionpool:https://api.godaddy.com:443 "GET /v1/domains/vinylcraft.net/records/A/@ HTTP/1.1" 200 59
+DEBUG:GoDaddyPy.Client:[GET] response: <Response [200]>
+DEBUG:GoDaddyPy.Client:Response data: b'[{"data":"97.119.213.18","name":"@","ttl":600,"type":"A"}]\n'
+DEBUG:GoDaddyPy.Client:Retrieved 1 record(s) from vinylcraft.net.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.godaddy.com:443
+DEBUG:urllib3.connectionpool:https://api.godaddy.com:443 "GET /v1/domains/vinylcraft.net/records/A HTTP/1.1" 200 59
+DEBUG:GoDaddyPy.Client:[GET] response: <Response [200]>
+DEBUG:GoDaddyPy.Client:Response data: b'[{"data":"97.119.213.18","name":"@","ttl":600,"type":"A"}]\n'
+DEBUG:GoDaddyPy.Client:Retrieved 1 record(s) from vinylcraft.net.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.godaddy.com:443
+DEBUG:urllib3.connectionpool:https://api.godaddy.com:443 "PUT /v1/domains/vinylcraft.net/records/A/@ HTTP/1.1" 200 0
+DEBUG:GoDaddyPy.Client:[PUT] response: <Response [200]>
+DEBUG:GoDaddyPy.Client:Response data: b''
+INFO:GoDaddyPy.Client:Updated record. Domain vinylcraft.net name @ type A
+INFO:root:2018-07-17 10:04:54.499074 - GoDaddyIP:97.119.213.18 - Public IP:69.63.120.36 - Changed?:True
