@@ -4,7 +4,7 @@ from godaddypy import Client, Account
 global currentip
 
 
-domain = ""
+domainname = ""
 
 #Get public IP address
 IPADDR= str(requests.get('http://ip.42.pl/raw').text)
@@ -36,16 +36,16 @@ def check_ip():
 
 def update_godaddy_ip(ip):
     try:
-        domain = Account(api_key=godaddy_key,api_secret=godaddy_secret)
-        client = Client(domain)
-        client.update_ip(ip, domains=[domain])
+        godaddydomain = Account(api_key=godaddy_key,api_secret=godaddy_secret)
+        client = Client(godaddydomain)
+        client.update_ip(ip, domains=[domainname])
     except:
         pass
 
 def get_godaddy_ip():
-    vinylcraft = Account(api_key=godaddy_key,api_secret=godaddy_secret)
-    client = Client(vinylcraft)
-    r = client.get_records(domain, record_type='A', name='@')
+    godaddydomain = Account(api_key=godaddy_key,api_secret=godaddy_secret)
+    client = Client(godaddydomain)
+    r = client.get_records(domainname, record_type='A', name='@')
     return r
 
 currentip = ''
